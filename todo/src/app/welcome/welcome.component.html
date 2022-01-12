@@ -1,0 +1,14 @@
+<h1>WELCOME !!!</h1>
+<div class="container">
+<p>welcome {{name}} works!</p>
+
+    <h2>Go to todos</h2>
+    <a routerLink="/listTodos">click here</a>
+
+    <h3>click here to get the welcome message</h3>
+    <button (click)="getWelcomeMessageForPathVariable()" class="btn btn-success">Get Welcome Message</button>
+</div>
+<div class="container" *ngIf="value">
+    <h2>this is the customized message</h2>
+    {{welcomeMessage}}
+</div>

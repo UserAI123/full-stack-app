@@ -1,0 +1,11 @@
+<h1>Log In!</h1>
+<pre>
+    <div class="container">
+<div class="alert alert-warning" *ngIf='valid'>{{errorMessage}}</div>
+User Name:<input type="text" name="username" [(ngModel)]="username">
+Password :<input type="password" name="password" [(ngModel)]="password">
+   <!--<button (click)='eventLogin()' class="btn btn-success">log in</button>-->
+<!--<button (click)='basicAuthLogin()' class="btn btn-success">log in</button>-->
+<button (click)='basicAWTAuthLogin()' class="btn btn-success">log in</button>
+</div>
+</pre>
